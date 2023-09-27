@@ -1,0 +1,10 @@
+import vagones.*
+
+describe "Vagones"{
+	const pasajeros_1 = new VagonesDePasajeros(largo = 10, ancho = 2, tieneBanios = true)
+	const pasajeros_2 = new VagonesDePasajeros(largo = 7, ancho = 4, tieneBanios = false)
+	const carga_1 = new VagonesDeCarga(maderasSueltas=5 , cargaMaximaIdeal=8000 )
+	const dormitorio_1 = new VagonesDormitorio(cantidadCOmpartimientos=12, cantidadCamas=4)
+	method initialize(){
+		pasajeros_2.estaOrdenado(false)
+	}
